@@ -1,0 +1,124 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.contenedor_principal {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Espaciado superior e inferior */
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+/* Diseño de cuadrícula para el formulario y contenido adicional */
+.layout {
+    display: grid;
+    grid-template-areas: "form grid-container";
+    grid-template-columns: 1fr 2fr; /* Ajusta el ancho de columnas */
+    gap: 2rem; /* Espacio entre columnas */
+}
+
+/* Estilos para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Estilos para campos de entrada y botones */
+input, select, button {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Estilos para botones */
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: #b0bec5;
+    opacity: 0.7;
+}
+
+/* Estilos para etiquetas */
+label {
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Estilos para inputs con estados */
+.error {
+    border-color: #dc3545;
+}
+
+.correcto {
+    border-color: #28a745;
+}
+
+/* Mensajes de error */
+.error-message {
+    color: #dc3545;
+    font-size: 14px;
+}
+
+/* Estilos para contenedor de checkbox */
+.button__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Estilo para botones deshabilitados */
+button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5; /* Añade opacidad para indicar estado deshabilitado */
+}
+
